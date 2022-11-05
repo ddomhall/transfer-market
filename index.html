@@ -12,13 +12,37 @@
 		<nav>
 			<div class="logo">logo</div>
 			<div class="search">
-				<input class="searchBar" placeholder="searchBar"></input>
-				<ul class="filters">
-					<li class="league filter">premier league</li>
-					<li class="nation filter">united states</li>
-					<li class="position filter">position</li>
-					<li class="price filter">price</li>
-				</ul>
+				<div class="searchBar">
+					<input placeholder="searchBar"></input>
+					<button class="searchBtn">Q</button>
+				</div>
+				<div class="filters">
+					<select class="filter">
+						<option value="premier league">premier league</option>
+						<option value="serie a">serie a</option>
+						<option value="la liga">la liga</option>
+						<option value="budesliga">budesliga</option>
+						<option value="ligue 1">ligue 1</option>
+					</select>
+					<select class="filter">
+						<option value="england">england</option>
+						<option value="france">france</option>
+						<option value="brazil">brazil</option>
+						<option value="spain">spain</option>
+						<option value="germany">germany</option>
+					</select>
+					<select class="filter">
+						<option value="goalkeeper">goalkeeper</option>
+						<option value="defender">defender</option>
+						<option value="midfielder">midfielder</option>
+						<option value="striker">striker</option>
+						<option value="manager">manager</option>
+					</select>
+					<div>
+						<label for="price">price</label><br/>
+						<input type="range" id="price" min="0" max="100000000">
+					</div>
+				</div>
 			</div>
 			<div class="team">team</div>
 		</nav>

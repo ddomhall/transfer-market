@@ -3,7 +3,7 @@
 	text-align: center;
 	padding: 0;
 	margin: 0;
-	box-shadow: inset 0px 0px 0px 1px #000;
+	/* box-shadow: inset 0px 0px 0px 1px #000; */
 }
 
 body {
@@ -13,42 +13,65 @@ body {
 nav {
 	display: flex;
 	justify-content: space-between;
-	height: 10vh;
+	height: 100px;
 	background-color: deepskyblue;
 }
 
 .logo,
 .team {
 	aspect-ratio: 1/1;
+	background-color: purple;
 }
 
 .search {
 	display: flex;
 	flex-direction: column;
-	width: auto;
 	height: 100%;
 }
 
 .searchBar {
-	border-radius: 25px;
+	display: flex;
+	box-shadow: inset 0px 0px 0px 0px #000;
 	height: 50%;
+	padding: 10px 10px 0;
+}
+
+.searchBar input {
+	border-radius: 25px;
+	height: 35px;
 	width: 100%;
 }
 
+.searchBar button {
+	width: 35px;
+	height: 35px;
+	border-radius: 20px;
+	margin-left: 10px;
+}
+
 .filters {
+	box-shadow: inset 0px 0px 0px 0px #000;
 	display: flex;
 	justify-content: space-evenly;
-	height: 50%;
+	margin: 10px;
+	gap: 10px;
 }
 
 .filter {
 	border-radius: 25px;
 	list-style: none;
-	width: 200px;
+	width: 150px;
+	height: 35px;
+}
+
+@media (max-width: 880px) {
+	.filters {
+		display: none;
+	}
 }
 
 @media (max-width: 580px) {
-	.filters {
-		display: none;
+	.search {
+		width: 100%;
 	}
 }
